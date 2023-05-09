@@ -1,22 +1,22 @@
 # Bank Account Management System
-This is a simple Python script that simulates a bank account management system. The user can deposit, withdraw, and view their account statement. The script also implements some basic checks to ensure that the user does not exceed their account limit, available balance, and maximum number of withdrawals.
+This is a Python code that simulates a simple banking system. It presents some classes and methods that allow the creation of checking accounts, withdrawals, deposits, and other banking transactions.
 
-How to use the script
-Download or clone the repository to your local machine.
-Open the terminal and navigate to the directory where the script is located.
-Run the script by typing python bank_account.py in the terminal and pressing Enter.
-Follow the instructions displayed on the screen to manage your bank account.
-Features
-The script offers the following features:
+Classes:
 
-Depositing money into the account
-Withdrawing money from the account
-Viewing the account statement
-Exiting the program
-Implementation
-The script is implemented using a while loop that keeps running until the user chooses to exit the program. Within the loop, the user is presented with a menu of options to choose from. Depending on the option selected, the script performs the corresponding operation.
+Account: This is the base class for all types of accounts. It contains methods for depositing and withdrawing money, checking the account balance, and printing the account statement.
+CheckingAccount: This is a subclass of Account that adds a monthly fee and a limit to the number of transactions that can be performed in a month.
+SavingsAccount: This is a subclass of Account that adds an interest rate and a minimum balance requirement.
+Methods:
 
-The user's account balance, limit, and statement are stored in variables that are updated as the user performs transactions. Basic checks are performed to ensure that the user does not exceed their account limit, available balance, and maximum number of withdrawals.
+create_account(): This method creates a new account by prompting the user for the account type, name, and initial balance.
+make_deposit(): This method deposits money into an account by prompting the user for the account number and the deposit amount.
+make_withdrawal(): This method withdraws money from an account by prompting the user for the account number and the withdrawal amount.
+print_statement(): This method prints the account statement for a given account by prompting the user for the account number.
+Usage:
+To use this code, simply run the file "banking_system.py" and follow the prompts to create accounts, make deposits and withdrawals, and print account statements.
 
-License
-This script is licensed under the MIT License. Feel free to use and modify it as per your requirements.
+Contributing:
+Contributions are welcome. Feel free to submit pull requests or open issues on GitHub.
+
+License:
+This code is released under the MIT License. See the LICENSE file for details.
